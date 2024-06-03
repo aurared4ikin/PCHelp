@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаленная настройка компьютеров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Удаленная настройка компьютеров</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#pricing">Цены</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>Настройка программного обеспечения</h3>
+                    <p>Установка и настройка операционной системы, драйверов и приложений.</p>
+                </div>
+                <div class="service">
+                    <h3>Удаление вирусов</h3>
+                    <p>Поиск и удаление вредоносного ПО, установка антивирусных программ.</p>
+                </div>
+                <div class="service">
+                    <h3>Оптимизация системы</h3>
+                    <p>Ускорение работы компьютера путем настройки и очистки системы.</p>
+                </div>
+                <div class="service">
+                    <h3>Консультации и поддержка</h3>
+                    <p>Консультации по любым вопросам, связанным с работой компьютера.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы команда профессионалов с многолетним опытом в области IT. Наша цель - помочь вам быстро и эффективно решить любые проблемы с вашим компьютером, не выходя из дома.</p>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2>Цены</h2>
+            <div class="pricing-table">
+                <div class="pricing-option">
+                    <h3>Базовый пакет</h3>
+                    <p>50 zł</p>
+                    <p>Установка программ и базовая настройка системы.</p>
+                </div>
+                <div class="pricing-option">
+                    <h3>Стандартный пакет</h3>
+                    <p>100 zł</p>
+                    <p>Установка программ, настройка системы и удаление вирусов.</p>
+                </div>
+                <div class="pricing-option">
+                    <h3>Премиум пакет</h3>
+                    <p>150 zł</p>
+                    <p>Полная настройка системы, оптимизация и постоянная поддержка.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы или вы хотите заказать услугу, свяжитесь с нами:</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Удаленная настройка компьютеров. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            flex: 1 1 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .pricing-table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .pricing-option {
+            flex: 1 1 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form label {
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
